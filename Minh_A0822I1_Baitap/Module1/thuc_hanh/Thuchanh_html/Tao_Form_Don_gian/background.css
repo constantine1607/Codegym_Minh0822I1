@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="UTF-8">
+<title>TaoFormDonGian</title>
+</head>
+<style>
+form{ text-align: Left;
+}
+
+</div>
+<form action="get">
+    <input name="Yourname" type="text" style="Margin-left:150px"/>
+    <label><input name="Sex" type="radio" value="Nam">Nam</label>
+    <label><input name="Sex" type="radio" value="Nữ">Nữ</label>
+    <input name="Birthday" type="text"style="Margin-left:100px"/>
+<select name="Chọn Lớp">
+    <option value="A1">A1</option>
+    <option value="A2">A2</option>
+    <option value="A2">A3</option>
+</select>
+    <input name="Email" type="text"style="Margin-left:100px"/>
+    <input name="Phone" type="text"style="Margin-left:100px"/>
+    <button type="submit" var="Register">Đăng ký</button>
+    <button type="Reset" var="Resetform">Nhập Lại</button>
+    <label><input name="Sex" type="radio" value="Nam">Nam</label>
+     <label><input name="Sex" type="radio" value="Nữ">Nữ</label>
+   <input name="Address" type="text"style="padding-bottom: 50px;margin-left: 120px"/>
+ </form>
+   </htmL>

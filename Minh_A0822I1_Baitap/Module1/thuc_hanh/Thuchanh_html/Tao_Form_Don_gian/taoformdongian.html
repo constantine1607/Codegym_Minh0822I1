@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>TaoFormDonGian</title>
+</head>
+<style>    .bai1 {
+    border:15px solid aqua;
+    border-top-width: 10px;
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    margin-right: 900px;">
+}
+
+.bai2 {
+    background-color: #FFFF99;
+    padding-bottom: 20px;
+    padding-top: 1px;
+    margin-right: 900px;" >
+}
+label{ color: orange;}
+.yourname {color: darkblue;margin-left: 50px}
+.email{color: darkblue;margin-left: 73px}
+.sothich{color: darkblue;margin-left: 60px}
+input {
+    border-style: inset;}
+
+form{text-align: start }
+
+</style>
+
+<div class="bai1">
+
+<body>
+<h2 style="background-color: orangered;
+    text-align: center;
+    margin-top:3px;
+    color: white" >SỞ THÍCH CỦA BẠN
+</h2>
+  <form action="Get">
+<div class="yourname"> Họ và tên
+          <input Name="Yourname" type="text" /></div><br>
+    <div class="email"> Email
+          <input Name="Email" type="text" style="width:100px"></div>
+     <p><div class="sothich"  >Sở thích
+          <label><input name="Hobby" type="checkbox" value="Thể Thao" style="margin-right:8px">Thể Thao</label>
+          <label><input name="Hobby" type="checkbox" value="Âm Nhạc"style="margin-left:10px"> Âm Nhạc </label>
+          <label><input name="Hobby" type="checkbox" value="Đọc sách"style="margin-left:18px"> Đọc Sách </label></div> <p>
+          <p><label> <input name="Hobby" type="checkbox" value="Lướt web" style="margin-left:120px"> Lướt Web</label>
+          <label> <input name="Hobby" type="checkbox" value="Chơi game"style="margin-left:10px"> Chơi Game </label>
+          <label> <input name="Hobby" type="checkbox" value="Điện ảnh"style="margin-left:5px"> Điện Ảnh </label></p>
+          <label><input name="Hobby" type="checkbox" value="Du lịch"style="margin-left:120px">Du Lịch</label><br>
+        <p><button type="Send" var="SubmitForm" style="margin-left:120px">Gửi Thông Tin</button>
+        <button type="reset" var= "ResetForm" > Nhập Lại </button></p>
+  </form>
+</body>
+</div> <br>
+<div class="bai2">
+
+<h2 style="background-color:#99FFCC;
+    text-align:left;
+    margin-top:1px;
+    color: blue"> ĐĂNG KÝ HỌC VIÊN
+</h2>
+    <form action="get">
+        <p style="color:darkblue">Họ và tên
+        <input name="Yourname" type="text"style="margin-left: 30px"/></p>
+        <p style="color:darkblue">Ngày sinh
+        <input name="Birthday" type="text"style="margin-left: 28px;width: 100px"/> </p>
+        <p style="color:darkblue">Giới tính
+        <input name="Sex" type="radio" value="Nam"style="margin-left: 35px">Nam
+        <input name="Sex" type="radio" value="Nữ">Nữ</label></p>
+        <p style="color:darkblue">Địa chỉ
+            <input name="Address" type="text"style="margin-left: 45px;padding-bottom: 50px;width: 140px"/></p>
+        <p style="color:darkblue">Lớp
+        <select name="Class" style="margin-left:67px">
+            <option value="Class">-Chọn Lớp-</option>
+        </select></p>
+        <p style="color:darkblue">Email
+            <input name="Email" type="text"style="margin-left: 55px; width: 120px"/><br></p>
+        <p style="color:darkblue">Điện thoại
+            <input name="Phone" type="text"style="margin-left: 25px;width: 120px"/></p>
+        <button type="submit" var="Register"style="margin-left: 95px">Đăng ký</button>
+        <button type="Reset" var="Resetform">Nhập Lại</button>
+    </form>
+</div>
+</html>
