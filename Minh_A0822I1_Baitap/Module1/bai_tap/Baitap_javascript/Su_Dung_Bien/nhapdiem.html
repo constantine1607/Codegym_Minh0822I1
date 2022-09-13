@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinhdiemso</title>
+</head>
+<body>
+<script>
+    let Vatly=prompt("Nhập Điểm vật Lý"),
+        HoaHoc=prompt("Nhập Điểm Hóa Học"),
+        SinhHoc=prompt("Nhập Điểm Sinh Học");
+    DiemVatly= parseFloat(Vatly);
+    DiemHoaHoc= parseFloat(HoaHoc);
+    DiemSinhHoc= parseFloat(SinhHoc);
+    TongDiem = (DiemVatly+DiemHoaHoc+DiemSinhHoc);
+    Diemtrungbinh= (TongDiem)/3;
+    document.write("Tổng Điểm Của học sinh đó là = "+ TongDiem);
+    document.write("Điểm Trung Bình của học sinh đó là ="+ Diemtrungbinh);
+
+</script>
+</body>
+</html>
