@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>UngDungChuyenDoiTienTe</title>
+</head>
+<body>
+Amount
+<input type="text" id="nhapso">
+Fromcurrency
+<select id="select1">
+
+    <option value="A" >Việt Nam Đồng</option>
+    <option value="B" >Đô la mỹ</option>
+</select>
+From Currency
+<select id="select2">
+
+    <option value="A" >Việt Nam Đồng</option>
+    <option value="B" >Đô la mỹ</option>
+    To Currency
+</select>
+<button onclick="chuyendoitien()" >Convert</button>
+<p id="demo" style="color: blue"></p>
+<script>
+    function chuyendoitien() {
+        let nhapso=document.getElementById('nhapso').value;
+        let select1=document.getElementById('select1').value;
+        let select2=document.getElementById('select2').value;
+
+        if (select1 == select2){
+            document.getElementById("demo").innerHTML="Result: " + nhapso}
+        if (select1 == "A" && select2 =="B"){
+            document.getElementById("demo").innerHTML="Result: " + nhapso/24000}
+        if (select1 == "B" && select2 == "A"){
+            document.getElementById("demo").innerHTML="Result: " + nhapso*24000}
+
+    }
+</script>
+</body>
+</html>
+
+
+
