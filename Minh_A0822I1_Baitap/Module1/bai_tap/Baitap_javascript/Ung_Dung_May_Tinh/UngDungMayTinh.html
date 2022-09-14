@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+    <input type="text" id="dauvao1">
+    <input type="text" id="dauvao2"><br>
+<p>
+    <button type="button" onclick="f()" >Addition(+)</button>
+    <button type="button" onclick="f()" >Subtraction(-)</button>
+    <button type="button" onclick="f()">Multiplication(X)</button>
+    <button type="button" onclick="f()">Division(/)</button>
+</p>
+<p id="result" style="color: blue" ></p>
+<script>
+    function f(addition,subtraction,multiplication) {
+
+    }
+
+    function A() {
+        let sothunhat = document.getElementById('dauvao1').value;
+        let sothuhai = document.getElementById('dauvao2').value;
+        sothunhat = parseFloat(sothunhat);
+        sothuhai = parseFloat(sothuhai);
+        Addition = (sothunhat + sothuhai);
+        document.getElementById("result").innerHTML = "Result Adition:" + Addition}
+    function B(){
+        let sothunhat = document.getElementById('dauvao1').value;
+        let sothuhai = document.getElementById('dauvao2').value;
+        sothunhat = parseFloat(sothunhat);
+        sothuhai = parseFloat(sothuhai);
+        Subtraction = (sothunhat - sothuhai);
+        document.getElementById("result").innerHTML = "Result Subtraction:" + Subtraction}
+    function C(){
+        let sothunhat = document.getElementById('dauvao1').value;
+        let sothuhai = document.getElementById('dauvao2').value;
+        sothunhat = parseFloat(sothunhat);
+        sothuhai = parseFloat(sothuhai);
+        Multiplication=(sothunhat*sothuhai);
+        document.getElementById("result").innerHTML = "Result Multiplication:"+Multiplication}
+    function D(){
+        let sothunhat = document.getElementById('dauvao1').value;
+        let sothuhai = document.getElementById('dauvao2').value;
+        sothunhat = parseFloat(sothunhat);
+        sothuhai = parseFloat(sothuhai)
+        Division = (sothunhat / sothuhai);
+        document.getElementById("result").innerHTML = "Result Division:" + Division}
+
+
+
+</script>
+</body>
+</html>
