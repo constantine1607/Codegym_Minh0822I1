@@ -6,7 +6,7 @@
 </head>
 <body>
 Amount
-<input type="text" id="nhapso">
+<input type="text" id="soluong">
 Fromcurrency
 <select id="select1">
 
@@ -24,16 +24,16 @@ From Currency
 <p id="demo" style="color: blue"></p>
 <script>
     function chuyendoitien() {
-        let nhapso=document.getElementById('nhapso').value;
+        let soluong=document.getElementById('soluong').value;
         let select1=document.getElementById('select1').value;
         let select2=document.getElementById('select2').value;
 
         if (select1 == select2){
-            document.getElementById("demo").innerHTML="Result: " + nhapso}
+            document.getElementById("demo").innerHTML="Result: " + soluong}
         if (select1 == "A" && select2 =="B"){
-            document.getElementById("demo").innerHTML="Result: " + nhapso/24000}
+            document.getElementById("demo").innerHTML="Result: " + soluong/24000}
         if (select1 == "B" && select2 == "A"){
-            document.getElementById("demo").innerHTML="Result: " + nhapso*24000}
+            document.getElementById("demo").innerHTML="Result: " + soluong*24000}
 
     }
 </script>
