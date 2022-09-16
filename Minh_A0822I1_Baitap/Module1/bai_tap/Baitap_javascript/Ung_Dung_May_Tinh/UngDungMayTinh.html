@@ -15,15 +15,13 @@
 </p>
 <p id="result" style="color: blue" ></p>
 <script>
-    function A() {
-        let sothunhat = document.getElementById('dauvao1').value;
-        let sothuhai = document.getElementById('dauvao2').value;
-        sothunhat = parseFloat(sothunhat);
-        sothuhai = parseFloat(sothuhai);
+   function A() {
+        let sothunhat= parseFloat(document.getElementById('dauvao1').value);
+        let sothuhai = parseFloat(document.getElementById('dauvao2').value);
         Addition = (sothunhat + sothuhai);
         document.getElementById("result").innerHTML = "Result Adition:" + Addition}
     function B(){
-        let sothunhat = document.getElementById('dauvao1').value;
+        let sothunhat = parseFloat(document.getElementById('dauvao1').value;
         let sothuhai = document.getElementById('dauvao2').value;
         sothunhat = parseFloat(sothunhat);
         sothuhai = parseFloat(sothuhai);
@@ -43,9 +41,6 @@
         sothuhai = parseFloat(sothuhai)
         Division = (sothunhat / sothuhai);
         document.getElementById("result").innerHTML = "Result Division:" + Division}
-
-
-
 </script>
 </body>
 </html>
