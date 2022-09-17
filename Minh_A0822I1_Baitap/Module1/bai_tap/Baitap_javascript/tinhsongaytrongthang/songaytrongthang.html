@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so ngay trong thang</title>
+</head>
+<body>
+   <form> <input  type="text" id="getMonth" >
+
+          <button type="button" onclick="caculatorDate()">Tính số ngày</button>
+   </form>
+<h1 id="monthIs" style="color: blue"></h1>
+<script>
+    function caculatorDate() {
+        let month = parseInt(document.getElementById("getMonth").value);
+
+        switch (month) {
+            case 1:
+                (month == 1)
+            case 3:
+                (month == 3)
+            case 5:
+                (month == 5)
+            case 7:
+                (month == 7)
+            case 8:
+                (month == 8)
+            case 10:
+                (month == 10)
+            case 12:
+                (month == 12)
+            {
+                document.getElementById("monthIs").innerHTML = ('Tháng: ' + month + ' có 31 ngày');
+            }
+                break;
+            case 2:
+                (month == 2)
+            {
+                document.getElementById("monthIs").innerHTML = ('Tháng: ' + month + ' có 28 hoặc 29 ngày');
+            }
+                break;
+            case 4:
+                (month == 1)
+            case 6:
+                (month == 6)
+            case 9:
+                (month == 9)
+            case 11:
+                (month == 11)
+            {
+                document.getElementById("monthIs").innerHTML = ('Tháng: ' + month + ' có 30 ngày');
+                break;
+            }
+        }
+    }
+
+    </script>
+</body>
+</html>
