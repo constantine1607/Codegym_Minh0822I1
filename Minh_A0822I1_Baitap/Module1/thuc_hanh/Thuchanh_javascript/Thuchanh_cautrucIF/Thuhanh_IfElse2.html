@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let username=prompt('Nhập tên');
+    if (username == 'Admin') {
+        let password = prompt('Password?', '');
+        if (password == 'TheMaster') {
+            alert('Welcome!');
+        } else if (password == 'null') {
+            alert('Canceled.');
+        } else {
+            alert('Wrong password');
+        }
+    } else if (username == 'null') {
+        alert('Canceled');
+    } else {
+        alert("I don't know you");
+    }
+</script>
 </body>
 </html>
