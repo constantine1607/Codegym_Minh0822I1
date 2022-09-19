@@ -1,0 +1,14 @@
+#calculator {border: 3px solid black;
+             width: 30%;
+            margin-left:0px;
+
+}
+.btn1 {border: 1px solid black;
+        width: 97%;
+        padding-left: 0px;
+        color:blue;
+        text-align: right;}
+#btn {border: 1px inset lightgray;
+            width:90%;
+            color: blue;
+                }
