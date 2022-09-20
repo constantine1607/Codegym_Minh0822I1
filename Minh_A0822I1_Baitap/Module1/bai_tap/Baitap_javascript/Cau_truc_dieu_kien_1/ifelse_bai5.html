@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("Nhập vào  số điểm bài kiểm tra thường xuyên học kỳ I của học sinh đó!"));
+    let b=parseFloat(prompt("Nhập vào số điểm thi giữa kỳ của học sinh đó!!! "));
+    let c=parseFloat(prompt("Nhập vào số điểm thi cuối kỳ của học sinh đó!!!"));
+    //HỌc lực của học sinh sẽ được đánh giá như sau : Điểm kiểm tra (20%), Điểm giữa kỳ(30%), Cuối kỳ(50%)
+    //với điểm trung bình: Từ (8.45->10 : Xêp loại Giỏi),(6.95->8.44 :Xêp loại Khá),(5.45->6.94 :Trung Bình)
+    // Từ (3.95-> 5.44 : Trung bình yếu) , (dưới 3.94 -> Kém)
+    d = ((a * 0.2) + (b * 0.3) + (c * 0.5))
+    if (d >= 8.45) {
+        alert("Học lực giỏi");
+    } else if (d >= 6.95) {
+        alert("Học lực khá");
+    } else if (d >= 5.45) {
+        alert("Học lưc trung bình");
+    } else if (d >= 3.95) {
+        alert(" Học lực Trung bình yếu");
+    } else {
+        alert("Học lực kém");
+    }
+</script>
+</body>
+</html>

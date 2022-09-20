@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<script>
+    // Tính tiền cước của 1 hộ gia đình?  Biết rằng:"
+    //1 .Phí thuê bao bắt buộc là 25 nghìn.
+    //2 .600 đồng cho mỗi gọi của 50 phút đầu tiên.
+    //3. 400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+    //4. 200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên
+    const a = 25000;
+    let b = parseFloat(prompt("Nhập số phút gọi của hộ gia đình trong tháng"));
+    c = (600 * b) + a;
+    d = (b-50)*400 +30000+a  ;
+    e = (b-150)*200 + 90000 +a ;
+    if (b >=200) {
+        document.write("số tiền cước phải trả là " + e + "nghìn đồng");
+    } else if (b >= 150) {
+        document.write("số tiền cước phải trả là " + d + " nghìn đồng");
+    } else {
+        document.write("số tiền cước phải trả là " + c + " nghìn đồng");
+    }
+</script>
+</body>
+</html>
