@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuongtrinhbac2</title>
+</head>
+<body>
+<p id="ptBac2"></p>
+<script>
+
+    let a=parseFloat(prompt("nhập tham số a"));
+    let b=parseFloat(prompt("Nhập tham số b"));
+    let c=parseFloat(prompt("Nhập tham số c"));
+    d= (b*b)-(4*a*c);
+    x1= (Math.sqrt(d) -b)/(2*a);
+    x2= (-Math.sqrt(d) -b)/(2*a);
+    x3= -b/(2*a);
+    if (d>0){
+        document.getElementById("ptBac2").innerText= "Phương trình có nghiệm x1 là: "+x1 +" Nghiệm x2 là: "+x2;
+    } else if (d==0){
+        document.getElementById("ptBac2").innerText= "Phương trình có nghiệm x1=x2: " + x3;
+    }else{
+        document.getElementById("ptBac2").innerText="Phương trình vô nghiệm";
+    }
+
+</script>
+</body>
+</html>
