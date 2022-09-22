@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập vào cạnh a"));
+    let b = parseFloat(prompt("Nhập vào cạnh b"));
+    let c = parseFloat(prompt("Nhập vào cạnh c"));
+    d = a + b + c;
+    if (d > 0) {
+        if ((a + b) > c) {
+            if ((b + c) > a) {
+                if ((a + c) > b) {
+                    alert("Đây là tam giác");
+                } else {
+                    alert("không phải là tam giác");
+                }
+            } else {
+                alert("Không phải là tam giác");
+            }
+        } else {
+            alert("Không phải là tam giác");
+        }
+    } else {
+        "Không phải là tam giác"
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinhthuethunhapcanhan</title>
+</head>
+<body>
+<script>
+    //Thuế TNCN phải nộp = Thu nhập tính thuế * Thuế suất
+
+    //Thu nhập tính thuế = Thu nhâp chịu thuế - Các khoản giảm trừ
+
+    //Thu nhập chịu thuế = Tổng thu nhập - Các khoản thu nhập được miễn thuế - Các khoản thu nhập không chịu thuế
+    let tienLuong = parseFloat(prompt("Nhập tiền lương của bạn"));
+    if (tienLuong > 0 && tienLuong <= 5000000) {
+        alert("Thuế thu nhập cá nhân" + (tienLuong * 0.05));
+    } else if (tienLuong <= 10000000) {
+        alert("Thuế thu nhập cá nhân" + ((tienLuong * 0.1) + 250000));
+    } else if (tienLuong <= 18000000) {
+        alert("Thuế thu nhập cá nhân" + ((tienLuong * 0.15) + 750000));
+    } else if (tienLuong <= 32000000) {
+        alert("Thuế thu nhập cá nhân" + ((tienLuong * 0.2) + 1950000));
+    } else if (tienLuong <= 52000000) {
+        alert("Thuế thu nhập cá nhân" + ((tienLuong * 0.25) + 4750000));
+    } else if (tienLuong <= 80000000) {
+        alert("Thuế thu nhập cá nhân" + ((tienLuong * 0.30) + 9700000));
+    } else {
+        alert("Thuế thu nhập cá nhân" + ((tienLuong * 0.35)) + 18150000);
+    }
+</script>
+</body>
+</html>
