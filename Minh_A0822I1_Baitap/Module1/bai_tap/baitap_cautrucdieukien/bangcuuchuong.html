@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id = "ketQua"></p>
+<script>
+    let tableID = '<table border="1">';
+        for (let i = 1; i <10 ; i++) {
+
+            tableID += '<tr>';
+
+            for (let j = 2; j <10 ; j++) {
+                tableID += '<td style="height: 40px; width: 80px">' + j + 'x' + i + "=" + (i*j) + '</td>';
+
+            }
+            tableID += '</tr>';
+        }
+    tableID += "</table>"
+    document.getElementById("ketQua").innerHTML= tableID;
+</script>
+</body>
+</html>
