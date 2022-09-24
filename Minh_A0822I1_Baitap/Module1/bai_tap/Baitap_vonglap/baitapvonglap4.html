@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //tim so dau tien trong day fibonacci chia het cho 5
+    let n1= 0;
+    let n2=1;
+    for (let i = 1; i < 21 ; i++) {
+            fibo=n1+n2;
+            n1=n2;
+            n2=fibo;
+            if (fibo%5==0){
+                document.write(fibo);
+                break;
+            }
+    }
+</script>
+</body>
+</html>
