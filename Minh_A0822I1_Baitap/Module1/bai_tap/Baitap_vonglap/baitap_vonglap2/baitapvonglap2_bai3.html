@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="star"></p>
+<script>
+    //Hình 1
+    for (let i = 1; i <= 5; i++) {
+        document.write("&nbsp;")
+        for (let j = 1; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    //Hình 2
+    document.write("<br>");
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= i; j--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    //Hình 3
+    document.write("<br>");
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+            if (j <= 5 - i) {
+                document.write("&nbsp;&nbsp;");
+            } else {
+                document.write("*");
+            }
+        }
+        document.write("<br>");
+    }
+    //Hình 4
+    document.write("<br>");
+     for (let i = 1; i <= 5; i++) {
+         for (let j = 5; j >=1; j--) {
+             if (j >= 7-i) {
+                 document.write("&nbsp;&nbsp;");
+             }else {
+                 document.write("*");
+             }
+         }
+         document.write("<br>");
+     }
+
+
+</script>
+</body>
+</html>
