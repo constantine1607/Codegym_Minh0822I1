@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>HienthisoNguyento</title>
 </head>
 <body>
-$END$
+<script>
+    let amountNumber = +prompt("Nhập số lượng số nguyên tố cần hiển thị ra màn hình");
+    let count = 0;
+    let N = 2;
+    while (count < amountNumber) {
+        let integer = 1;
+        for (let i = 2; i <= Math.sqrt(N); i++) {
+            if (N % i === 0 && N>2) {
+                integer = 0;
+            }
+        }
+        if (integer === 1) {
+            document.write(N + "<br>");
+            count++;
+        }
+        N++;
+    }
+</script>
 </body>
 </html>
