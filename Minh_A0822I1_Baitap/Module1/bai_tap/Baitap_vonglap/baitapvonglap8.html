@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="put" value="PLAY GAME!!!" type="button" onclick="playGame()"><br><br><br>
+<input id="input" value="REPLAY!!!" type="button" onclick="playGame()">
+<script>
+    function playGame() {
+        let min = +prompt("Nhập số A");
+        let max = +prompt("Nhập số B");
+        let random = getRandomNumber(min, max);
+
+        function getRandomNumber(a, b) {
+            let r = Math.random() * (a - b) + a;
+            let result = Math.round(r);
+            return result;
+        }
+        let predictNumber = +prompt("Nhập số cần đoán");
+        if (predictNumber === random) {
+            alert("Congratulations!!!");
+        }
+        if (predictNumber < random) {
+            alert("Nhỏ hơn hãy nhập lại");
+        } else if (predictNumber > random)
+        {
+            alert("Lớn hơn nhập lại");
+        }
+    }
+</script>
+</body>
+</html>
