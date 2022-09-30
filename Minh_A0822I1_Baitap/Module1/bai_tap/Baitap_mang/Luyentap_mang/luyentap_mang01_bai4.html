@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myArraynumbers = [3, 5, 7, 83, 5, -5, 0, 12, 80, 120, 33, -2]
+    let start = 0;
+    let end = myArraynumbers.length - 1;
+    while (start < end) {
+        let x = myArraynumbers[start];
+        myArraynumbers[start] = myArraynumbers[end];
+        myArraynumbers[end] = x;
+        start++;
+        end--;
+    }
+    document.write(myArraynumbers);
+</script>
+</body>
+</html>

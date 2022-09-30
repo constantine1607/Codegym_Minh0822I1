@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let v = +prompt(" Nhập vào số nguyên V");
+    let myArraynumber = [3, 5, 7, 83, -5, 0, 12, 80, 120, 33, -2]
+    let index = 0;
+    for (let i = 0; i < myArraynumber.length; i++) {
+        if (v == myArraynumber[i]) {
+            index = i;
+            document.write("At position  " + index + "V is in the array" + "<br>");
+        } else {
+            index = i;
+            document.write("At position " + index + " V is not the array" + "<br>");
+        }
+    }
+
+</script>
+</body>
+</html>

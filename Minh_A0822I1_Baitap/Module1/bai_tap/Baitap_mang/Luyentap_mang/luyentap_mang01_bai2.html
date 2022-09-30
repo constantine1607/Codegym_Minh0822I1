@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myArraynumbers = [5,123,4,5,546,2,12,6,534,41,25]
+    let max = myArraynumbers[0]  ;
+    let index=0;
+    for (let i = 0; i <= myArraynumbers.length; i++) {
+        if (myArraynumbers[i] > max) {
+            max = myArraynumbers[i];
+            index = i;
+
+        }
+    }document.write("Max: " + max + " at position " + index);
+</script>
+</body>
+</html>

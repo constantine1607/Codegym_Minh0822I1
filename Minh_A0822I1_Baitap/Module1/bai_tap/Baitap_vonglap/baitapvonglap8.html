@@ -5,30 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-<input id="put" value="PLAY GAME!!!" type="button" onclick="playGame()"><br><br><br>
-<input id="input" value="REPLAY!!!" type="button" onclick="playGame()">
+<input id="Alo" value="PLAY GAME!!!" type="button" onclick="playGame()"><br><br><br>
 <script>
-    function playGame() {
-        let min = +prompt("Nhập số A");
-        let max = +prompt("Nhập số B");
-        let random = getRandomNumber(min, max);
 
-        function getRandomNumber(a, b) {
-            let r = Math.random() * (a - b) + a;
-            let result = Math.round(r);
-            return result;
-        }
+    function playGame() {
+        let min = +prompt("Nhập giá trị nhỏ nhất trong khoảng cần đoán");
+        let max = +prompt("Nhập giá trị lớn nhất trong khoảng cần đoán");
+        let random = Math.round(Math.random() * (max - min) + min);
         let predictNumber = +prompt("Nhập số cần đoán");
         if (predictNumber === random) {
-            alert("Congratulations!!!");
-        }
-        if (predictNumber < random) {
+            alert("Congratulation!!!");
+        } else if (predictNumber < random) {
             alert("Nhỏ hơn hãy nhập lại");
-        } else if (predictNumber > random)
-        {
+        } else {
             alert("Lớn hơn nhập lại");
         }
+        document.write(i + "<input value=\"REPLAY\" type =\"button\" onclick= \"playGame()\">" + "<br>");
     }
+
+
 </script>
 </body>
 </html>
