@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myArray = ['c', 's', 'c', '2', '6', '1'];
+    let firstNumber = 0;
+    let lastNumber = myArray.length - 1
+    while (firstNumber < lastNumber) {
+        //Đặt 1 biến y = phần tử đầu tiên
+        let y = myArray[firstNumber]
+        myArray[firstNumber] = myArray[lastNumber];
+        myArray[lastNumber] = y;
+        //Tăng biến phần tử đầu tiên và giảm phần tử cuối cùng
+        firstNumber++;
+        lastNumber--;
+    }
+    document.write(myArray);
+</script>
+</body>
+</html>

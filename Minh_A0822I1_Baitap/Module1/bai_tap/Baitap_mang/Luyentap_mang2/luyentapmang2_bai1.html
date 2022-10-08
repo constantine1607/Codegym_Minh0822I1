@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    // Cách 1 dùng vòng lặp
+    let array1 = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    for (let i = 0; i < array1.length; i++) {
+        document.write("Row " + i + "<br>");
+        for (let j = 0; j < array1[i].length; j++) {
+            document.write(array1[i][j] +"<br>");
+        }
+    }
+    document.write("<hr>");
+    // Cách 2 Dùng forEach để duyệt qua các phần tử của mảng 2 chiều
+    let array2 = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    array2.forEach(function (number, row) {
+        document.write("Row " + row +"<br>");
+        number.forEach(function (number) {
+            document.write(number + "<br>")
+        });
+    });
+
+
+
+</script>
+</body>
+</html>
