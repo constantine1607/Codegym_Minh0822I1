@@ -5,11 +5,12 @@
     <title>tudien</title>
 </head>
 <body>
-<!<input id="mode" value="" type="text" oninput="demo()">
+<input type="text" placeholder="Nhập từ tiếng anh" id="engLish" onkeyup="engLish()">
 <div id="result"></div>
 <script>
-    let englishWord = ["Hello", "GoodMorning", "Goodbye"];
+    let englishWord = ["Hello", "Goodmorning", "Goodbye"];
     let vietnamWord = ["Xin chào !!!", "Chào buổi sáng !!!", "Chào Tạm Biệt!!!"];
+<<<<<<< HEAD
     let A = document.getElementById()
     for (let i = 0; i < englishWord.length; i++) {
         if (A == englishWord[i]) {
@@ -19,6 +20,19 @@
             document.getElementById("result").innerHTML = A;
         } else {
             document.getElementById("result").innerHTML = "Không tìm thấy";
+=======
+    function engLish() {
+        let index=-1;
+        let myWord = document.getElementById("engLish").value;
+        for (let i = 0; i < englishWord.length; i++) {
+            if (myWord == englishWord[i]) {
+                index=i;
+                document.getElementById("result").innerText = vietnamWord[index];
+            }
+        }
+        if (index == -1){
+            document.getElementById("result").innerText = " Không tìm ra"
+>>>>>>> 3ca7e9061ed46eadff2f264d79ac50bbfd498ce8
         }
     }
 </script>
