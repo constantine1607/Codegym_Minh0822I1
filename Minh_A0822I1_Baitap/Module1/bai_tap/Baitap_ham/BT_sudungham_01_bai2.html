@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập vào đối số</title>
+</head>
+<body>
+<p id="valueResult"></p>
+<input id="call" value=" Hãy tăng giá trị" type="button" onclick="myCallBack()">
+<script>
+
+    function myCallBack() {
+        result += 1;
+        document.getElementById("valueResult").innerText = "Giá trị " +result ;
+        return result;
+    }
+    result=0;
+    result= myCallBack();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm ngôi sao</title>
+</head>
+<body>
+<p id="constellation" ></p>
+<script>
+    let orderOfstars=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let orderOfconstellations=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let star=prompt("Nhập vào ngôi sao");
+    function parametors(param) {
+        for (let i = 0; i <orderOfstars.length ; i++) {
+            param=orderOfstars[i];
+            for (let j = 0; j <orderOfconstellations.length ; j++) {
+                cons=orderOfstars[j]
+            }
+                result=  orderOfconstellations[i]
+            document.getElementById("constellation").innerText= "Ngôi sao này thuộc chòm sao " + result;
+
+        }return result;
+    }
+
+    result =parametors(star)
+</script>
+</body>
+</html>

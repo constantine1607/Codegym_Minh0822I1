@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="meterResult"></p>
+<p id="footResult"></p>
+<script>
+    let meterNumber= +prompt("Nhập số meter");
+    let footNumber= +prompt("Nhập số foot");
+    function footToMeter(foot) {
+        document.getElementById("meterResult").innerText="Số foot là " + foot ;
+    }
+    function meterToFoot(metter) {
+        document.getElementById("footResult").innerText=" Số metter là " + metter ;
+    }
+    meterToFoot(footNumber*0.305)
+    footToMeter(meterNumber*3.279)
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm nhận tham số</title>
+</head>
+<body>
+<script>
+    let number1 = +prompt("nhập vào tham số thứ nhất");
+    let number2 = +prompt("nhập vào tham số thứ hai");
+    parameters(number1, number2)
+
+    function parameters(value1, value2) {
+        if (value1 > value2) {
+            alert("giá trị nhỏ hơn")
+        } else {
+            let sum = value1 + value2;
+            document.write(sum);
+        } return sum;
+    }
+</script>
+</body>
+</html>

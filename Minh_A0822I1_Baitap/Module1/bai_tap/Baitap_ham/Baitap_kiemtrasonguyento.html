@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập vào 1 số nguyên bất kỳ");
+
+    function isPrimer(value) {
+        if (value == 1 && value < 0) {
+            document.write(value + " Không phải là số nguyên tố")
+        }
+        let X = 1;
+        for (let i = 2; i <= Math.sqrt(value); i++) {
+            if (value % i === 0 && value > 2) {
+                document.write(value + " Không phải là số nguyên tố");
+                X = 0;
+                break;
+            }
+        }
+        if (X === 1) {
+            document.write(value + " Là số nguyên tố");
+        }
+    }
+
+    isPrimer(number)
+</script>
+</body>
+</html>
