@@ -5,24 +5,30 @@
     <title>Tìm ngôi sao</title>
 </head>
 <body>
-<p id="constellation" ></p>
+<p id="constellation"></p>
 <script>
-    let orderOfstars=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
-    let orderOfconstellations=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
-    let star=prompt("Nhập vào ngôi sao");
-    function parametors(param) {
-        for (let i = 0; i <orderOfstars.length ; i++) {
-            param=orderOfstars[i];
-            for (let j = 0; j <orderOfconstellations.length ; j++) {
-                cons=orderOfstars[j]
-            }
-                result=  orderOfconstellations[i]
-            document.getElementById("constellation").innerText= "Ngôi sao này thuộc chòm sao " + result;
+    let orderOfstars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let orderOfconstellations = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let star = prompt("Nhập vào ngôi sao");
+    let x = 1;
 
-        }return result;
+    function parametors() {
+        for (let i = 0; i < orderOfconstellations.length; i++) {
+            result = orderOfconstellations[i];
+            for (let j = 0; j < orderOfstars.length; j++) {
+                if (star == orderOfstars[i]) {
+                    star = result;
+                    document.getElementById("constellation").innerText = "Ngôi sao này thuộc về chòm sao: " + result;
+                    x = 0;
+                }
+            }
+        }
+        if (x == 1) {
+            document.getElementById("constellation").innerText = "Đây không phải là một ngôi sao";
+        }
     }
 
-    result =parametors(star)
+    parametors(star)
 </script>
 </body>
 </html>
