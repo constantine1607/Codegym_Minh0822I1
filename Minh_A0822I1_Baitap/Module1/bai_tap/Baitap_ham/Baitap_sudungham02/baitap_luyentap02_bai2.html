@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích, chu vi hình tròn</title>
+</head>
+<body>
+<script>
+    let radiusNumber= +prompt("Nhập vào bán kính hình tròn");
+    const pi=3.14;
+    function perimeterCircle(number1) {
+            result1= number1*2*pi;
+        document.write("Chu vi hình tròn là " +  result1 +"<br>")
+        return result1;
+    }
+    function areaCircle(number2){
+        result2=number2*number2*pi;
+        document.write("Diện tích hình tròn là " +  result2)
+        return result2;
+    }
+    result1 = perimeterCircle(radiusNumber);
+    result2 = areaCircle(radiusNumber);
+</script>
+</body>
+</html>

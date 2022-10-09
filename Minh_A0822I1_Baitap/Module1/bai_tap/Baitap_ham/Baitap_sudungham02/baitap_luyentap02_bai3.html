@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa></title>
+</head>
+<body>
+<script>
+    let myNumber = +prompt("Nhập vào số nguyên bất kỳ")
+    let result = 1;
+    factorialNumber(myNumber)
+    function factorialNumber(number) {
+        for (let i = 1; i <= number; i++) {
+            result *= i;
+        }
+    }
+    document.write(result + "<br>");
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trả lại số nguyên</title>
+</head>
+<body>
+<script>
+    let intergerA = +prompt("Nhập số nguyên thứ nhất");
+    let intergerB = +prompt("Nhập số nguyên thứ hai");
+    let intergerC = +prompt("Nhập số nguyên thứ ba");
+
+    function returnMin(a, b, c) {
+        if (a < b && a < c) {
+            document.write(" Số nguyên thứ nhất là số nhỏ nhất");
+            return a;
+        } else if (b < a && b < c) {
+            document.write("Số nguyên thứ hai là số nhỏ nhất");
+        } else {
+            document.write("Số nguyên thứ ba là số nhỏ nhất");
+        }
+    }
+
+    returnMin(intergerA, intergerB, intergerC)
+</script>
+</body>
+</html>
