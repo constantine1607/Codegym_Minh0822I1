@@ -5,6 +5,33 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let myArray = [];
+    let totalArray = prompt("Nhập vào số lượng element trong mảng");
+    for (let i = 0; i < totalArray; i++) {
+        myArray[i] = prompt("Nhập giá trị của element trong mảng" + i);
+    }
+    let anyCharact = prompt("Nhập vào một ký tự bất kỳ ");
+    let x = 1;
 
+    function belongArray(value, index) {
+        for (let i = 0; i < myArray.length; i++) {
+            if (value == myArray[i]) {
+                elementBelong = value;
+                index = i;
+                document.write("Vị trí thứ " + index + " kí tự nằm trong mảng là " + elementBelong + "<br>");
+                x = 0;
+            }
+            if (x == 1) {
+                document.write(-1);
+                break;
+            }
+        }
+    }
+
+    let index = 0;
+    elementBelong = belongArray(anyCharact, index);
+
+</script>
 </body>
 </html>
