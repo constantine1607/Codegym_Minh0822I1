@@ -9,10 +9,12 @@
     let A=+prompt("Nhập số nguyên thứ nhất")
     let B=+prompt("Nhập số nguyên thứ hai")
     function swapNumber(num1,num2) {
-        result=
+            x= num1;
+            num1=num2;
+            num2=x;
+            document.write(num1 +" " + num2)
     }
-
-    result =swapNumber(A,B)
+   swapNumber(A,B)
 </script>
 </body>
 </html>

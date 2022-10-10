@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //&emsp;: tab;
+    //&ensp;: space
+    /*Bài 1: Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m theo hình dưới đây.
+    Ví dụ: x = 4, y = 5
+    * * * * *
+    *       *
+    *       *
+    * * * * *       */
+    document.write("Hình chữ nhật rỗng" + "<br>");
+    for (let i = 1; i <= 4; i++) {
+        for (let j = 1; j <= 5; j++) {
+            if (i == 1 || i == 4 || j == 1 || j == 4) {
+                document.write(" *");
+            } else {
+                document.write("&ensp;&ensp; ")
+            }
+        }
+        document.write("<br>");
+    }
+    /*Bài 2: Vẽ tam giác vuông cân đặc có chiều cao h. Ví dụ: h = 5
+    *                       *        * * * * *       * * * * *
+    * *                   * *        * * * *           * * * *
+    * * *               * * *        * * *               * * *
+    * * * *           * * * *        * *                   * *
+    * * * * *       * * * * *        *                       *
+     */
+    document.write("Tam giác đặc thứ 1" + "<br>")
+    document.write("<br>")
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+            if (j <= i) {
+                document.write("* ");
+            } else {
+                document.write("&nbsp;&nbsp;   ")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("<br>")
+    document.write("Tam giác đặc thứ 2" + "<br>")
+    document.write("<br>")
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+            if (j <= 5 - i) {
+                document.write("&nbsp;&nbsp;   ");
+            } else {
+                document.write("*   ");
+            }
+        }
+        document.write("<br>");
+    }
+    document.write("<br>")
+    document.write("Tam giác đặc thứ 3" + "<br>")
+    document.write("<br>")
+    for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= 5; j++) {
+            if (j <= i) {
+                document.write("* ")
+            } else {
+                document.write("&nbsp;&nbsp;   ")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("<br>")
+    document.write("Tam giác đặc thứ 4" + "<br>")
+    /*document.write("<br>")
+    for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= 5; j++) {
+            if (j <= 5- i) {
+                document.write("&nbsp;&nbsp;   ")
+            } else {
+                document.write("* ")
+            }
+        }
+        document.write("<br>")
+    }*/
+    for(i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++) {
+            document.write("  ");
+        }
+        for (j = i; j < 5; j++) {
+            document.write(" *");
+        }
+        document.write("<br>");
+    }
+
+    /*Bài 3: Vẽ tam giác vuông cân rỗng có chiều cao h. Ví dụ: h = 5
+    *                       *        * * * * *       * * * * *
+    * *                   * *        *     *          *      *
+    *   *               *   *        *   *              *    *
+    *     *           *     *        * *                  *  *
+    * * * * *       * * * * *        *                       *          */
+    document.write("<br>")
+    document.write("Tam giác rỗng thứ 1" + "<br>")
+    document.write("<br>")
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+            if ( j == 1 || j == i || i == 5) {
+                document.write("*  ")
+            } else {
+                document.write("&nbsp;&nbsp;   ")
+            }
+        }
+        document.write("<br>")
+    }
+
+    document.write("<br>")
+    document.write("Tam giác rỗng thứ 2" + "<br>")
+    document.write("<br>")
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+            if (j== 5-2*i || i == 5 || j == 5) {
+                document.write("* ");
+            } else {
+                document.write(" &nbsp;&nbsp;  ");
+            }
+        }
+        document.write("<br>");
+    }
+    /*Bài 3: Vẽ tam giác cân đặc có chiều cao h. Ví dụ: h = 5
+            *
+          * * *
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
+    Bài 4: Vẽ tam giác cân rỗng có chiều cao h. Ví dụ: h = 5
+            *
+          *   *
+        *       *
+      *           *
+    * * * * * * * * **/
+</script>
+</body>
+</html>

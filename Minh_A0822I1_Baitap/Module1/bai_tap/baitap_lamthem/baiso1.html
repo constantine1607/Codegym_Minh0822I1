@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra phần tử</title>
+</head>
+<body>
+<script>
+    // Yêu cầu bài toán:
+    //Nhập 1 mảng từ bàn phím với độ dài n
+    //Hiện thị mảng sau khi thêm mới các phần tử
+    //Kiểm tra mảng vừa nhập. Nếu số phần tử chẵn bằng số phần tử lẻ thì hiện thị thông báo "OK",
+    //Nếu không thoả mãn thì hiện thị "NO"
+    let myArray = [];
+    let amountElement = +prompt("Nhập số lượng element của mảng");
+    A = myArray[0];
+    x = true;
+    for (let i = 0; i < amountElement; i++) {
+        myArray[i] = +prompt("Nhập giá trị của element trong mảng" + i);
+        document.write("vị trí thứ " + i + " giá trị bằng " + myArray[i] + "<br>")
+        if (amountElement % 2 == 0) {
+            x = false;
+        }
+    }
+    if (x == true) {
+        document.write("NO!");
+    } else {
+        document.write("OK!");
+    }
+
+
+</script>
+</body>
+</html>
