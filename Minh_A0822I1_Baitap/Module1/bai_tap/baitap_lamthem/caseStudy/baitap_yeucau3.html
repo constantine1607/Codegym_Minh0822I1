@@ -6,11 +6,11 @@
 </head>
 <body>
 <script>
-    let integerNumberA = [];
-    let integerAmountElement = +prompt("Nhập vào số lượng số nguyên trong mảng")
-    let integerNumberB = [];
-    for (let i = 0; i < integerAmountElement; i++) {
-        integerNumberA[i] = +prompt("Nhập vào element thứ " + i)
+    let integerArray1 = [];
+    let integerArrayAmount = +prompt("Nhập vào số lượng số nguyên trong mảng");
+    let integerArray2 = [];
+    for (let i = 0; i < integerArrayAmount; i++) {
+        integerArray1[i] = +prompt("Nhập vào element thứ " + i);
     }
     let c = 0;
 
@@ -22,11 +22,11 @@
                 b[i] = c;
             }
         }
-        document.write(integerNumberB);
+        document.write(integerArray2);
         return b[i];
     }
 
-    frefixSums(integerNumberA, integerNumberB)
+    frefixSums(integerArray1, integerArray2)
 
 </script>
 </body>
