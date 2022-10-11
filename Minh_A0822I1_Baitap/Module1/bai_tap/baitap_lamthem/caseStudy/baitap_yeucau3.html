@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng element của các số nguyên</title>
+</head>
+<body>
+<script>
+    let integerNumberA = [];
+    let integerAmountElement = +prompt("Nhập vào số lượng số nguyên trong mảng")
+    let integerNumberB = [];
+    for (let i = 0; i < integerAmountElement; i++) {
+        integerNumberA[i] = +prompt("Nhập vào element thứ " + i)
+    }
+    let c = 0;
+
+    function frefixSums(a, b) {
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i]; j++) {
+                b[i] = a[i];
+                c = c + 1;
+                b[i] = c;
+            }
+        }
+        document.write(integerNumberB);
+        return b[i];
+    }
+
+    frefixSums(integerNumberA, integerNumberB)
+
+</script>
+</body>
+</html>
