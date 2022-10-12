@@ -1,17 +1,24 @@
-let numerators = [5, 2, 5, 1, 3, 9];
-let denominators = [6, 3, 4, 8, 5, 6];
-let max = (numerators[0] / denominators[0])
-let index = 0;
+let A = [1, 2, 3]
+let B = ['Một', 'Hai', 'ba'];
+let C = ["a"];
+let x = true;
+function nhap(C) {
 
-function maxFraction(arr1, arr2, max, index) {
-    for (let i = 0; i < arr1.length; i++) {
-        for (let j = 0; j < arr2.length; j++) {
-            if ((arr1[i] / arr2[i]) > max) {
-                max = (arr1[i] / arr2[i]);
-                index = [i];
+    for (let i = 0; i < B.length; i++) {
+        result = B[i]
+        for (let j = 0; j < A.length; j++) {
+            if (C == A[i]) {
+                C = result;
+                console.log(result)
+                x=false;
             }
         }
-    }console.log(index + " " + max)
+    }
+    if (x == true) {
+        console.log("not a number")
+    }
 }
 
-maxFraction(numerators, denominators, max, index)
+
+
+nhap(C)

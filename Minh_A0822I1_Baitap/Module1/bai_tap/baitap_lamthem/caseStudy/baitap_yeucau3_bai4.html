@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="data" type="text" placeholder="Nhập vào number" oninput="inputNumber()">
+<p id="result"></p>
+<script>
+    let arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let arrayString = ['Một', 'Hai', 'Ba'];
+    let x = true;
+    function inputNumber() {
+        let C = document.getElementById("data").value;
+        for (let i = 0; i < arrayString.length; i++) {
+            result = arrayString[i]
+            for (let j = 0; j < arrayNumber.length; j++) {
+                if (C == arrayNumber[i]) {
+                    C = result;
+                    document.getElementById('result').innerText = result;
+                    x=false;
+                }
+            }
+        }
+        if (x == true){
+            document.getElementById('result').innerHTML = "Not a Number";
+        }
+    }
+
+</script>
+</body>
+</html>
