@@ -1,12 +1,17 @@
-let a = [1, 2, 3]
-let b = [];
-let c = 0;
-for (let i = 0; i < a.length; i++) {
-    for (let j = 0; j < a[i]; j++) {
-        b[i] = a[i];
-        c = c + 1;
-        b[i]=c;
+let numerators = [5, 2, 5, 1, 3, 9];
+let denominators = [6, 3, 4, 8, 5, 6];
+let max = (numerators[0] / denominators[0])
+let index = 0;
 
-    }
+function maxFraction(arr1, arr2, max, index) {
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if ((arr1[i] / arr2[i]) > max) {
+                max = (arr1[i] / arr2[i]);
+                index = [i];
+            }
+        }
+    }console.log(index + " " + max)
+}
 
-}console.log(b)
+maxFraction(numerators, denominators, max, index)
