@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayNumber1 = [7, 2, 5, 3, 5, 3];
+    let arrayNumber2 = [7, 2, 5, 4, 6, 3, 5, 3,1,8,9];
+
+    function checkInteger(array1, array2) {
+
+        for (let i = 0; i < array2.length; i++) {
+            let flag = true;
+            for (let j = 0; j < array1.length; j++) {
+                if (array1[j] == array2[i]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag == true) {
+                document.write(array2[i] +"<br>");
+            }
+        }
+    }
+
+    checkInteger(arrayNumber1, arrayNumber2)
+
+</script>
+</body>
+</html>
